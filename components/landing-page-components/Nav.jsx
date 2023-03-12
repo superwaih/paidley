@@ -8,13 +8,15 @@ import { MenuIcon } from '@/public/svgs/MenuIcon'
 const Nav = () => {
   return (
     <nav className='m-auto w-[80%] bg-mainBg  flex py-4 justify-between'>
-        <div className="logo">
-            <Image
+        <div className="logo cursor-pointer">
+           <Link href="/"> 
+           <Image
                 width={0}
                 height={0}
                 src={Logo}
                 alt=""
             />
+           </Link>
 
         </div>
         <div className="links hidden lg:inline-block">
