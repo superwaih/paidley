@@ -30,6 +30,29 @@ export const Accounts= [
 ]
 
 export const Faqs = [
-    {}
+    {
+        id:1,
+        question: "How to Set up a free account on Paidley with no hassle or Stress",
+        answer: "Paidley is a financial technology company that develops and operates payment services, including virtual debit cards, foreign currency bank accounts with best low cost exchange rates and money services all from a smartphone app. Make easy international payments, send money across borders."
+    },
+      {
+        id:2,
+        question: "How to Set up a free account on Paidley with no hassle or Stress",
+        answer: "Paidley is a financial technology company that develops and operates payment services, including virtual debit cards, foreign currency bank accounts with best low cost exchange rates and money services all from a smartphone app. Make easy international payments, send money across borders."
+    },   {
+        id:3,
+        question: "How to Set up a free account on Paidley with no hassle or Stress",
+        answer: "Paidley is a financial technology company that develops and operates payment services, including virtual debit cards, foreign currency bank accounts with best low cost exchange rates and money services all from a smartphone app. Make easy international payments, send money across borders."
+    },   {
+        id:4,
+        question: "How to Set up a free account on Paidley with no hassle or Stress",
+        answer: "Paidley is a financial technology company that develops and operates payment services, including virtual debit cards, foreign currency bank accounts with best low cost exchange rates and money services all from a smartphone app. Make easy international payments, send money across borders."
+    },   {
+        id:5,
+        question: "How to Set up a free account on Paidley with no hassle or Stress",
+        answer: "Paidley is a financial technology company that develops and operates payment services, including virtual debit cards, foreign currency bank accounts with best low cost exchange rates and money services all from a smartphone app. Make easy international payments, send money across borders."
+    },
+    
+
 ]
 
