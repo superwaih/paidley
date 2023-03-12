@@ -4,6 +4,7 @@ import Logo from "../../public/svgs/logo.svg"
 import {  AiOutlineYoutube } from 'react-icons/ai'
 import {FiTwitter, FiFacebook} from "react-icons/fi"
 import {BsInstagram} from "react-icons/bs"
+import Link from 'next/link'
 const Footer = () => {
   return (
     <footer className='bg-[#E8F7FD] mt-8'>
@@ -13,9 +14,22 @@ const Footer = () => {
         <div className='flex flex-col space-y-3'>
           <h5 className='text-[#283341] font-semibold'>Company</h5>
           <ul className='flex flex-col space-y-3'>
-            <li className='text-[14px] text-[#283341] cursor-pointer'>Features</li>
-            <li className='text-[14px] text-[#283341] cursor-pointer'>About Us</li>
-            <li className='text-[14px] text-[#283341] cursor-pointer'>Faq</li>
+            <li className='text-[14px] text-[#283341] cursor-pointer'>
+              <Link href="/features">
+                Features
+              </Link>
+            </li>
+            <li className='text-[14px] text-[#283341] cursor-pointer'>
+                <Link href="/about-us">
+                About Us
+              </Link>
+            </li>
+            <li className='text-[14px] text-[#283341] cursor-pointer'>
+            <Link href="/faq">
+          FAQs          
+                  </Link>
+
+            </li>
 
           </ul>
         </div>

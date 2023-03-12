@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from "../../public/svgs/logo.svg"
-import Ng, { NGicon } from "../../public/svgs/ng.js"
+import { NGicon } from "../../public/svgs/ng.js"
+import Link from 'next/link'
 
 import Image from 'next/image'
 import { MenuIcon } from '@/public/svgs/MenuIcon'
@@ -11,7 +12,6 @@ const Nav = () => {
             <Image
                 width={0}
                 height={0}
-                objectFit="cover"
                 src={Logo}
                 alt=""
             />
@@ -19,11 +19,28 @@ const Nav = () => {
         </div>
         <div className="links hidden lg:inline-block">
             <ul className='flex justify-between py-3 items-center gap-8 '>
-                <li className="normal-text cursor-pointer text-[16px] hover:text-brand-blue">Features</li>
-                <li className="normal-text cursor-pointer text-[16px] hover:text-brand-blue" >About us</li>
-                <li className="normal-text cursor-pointer text-[16px] hover:text-brand-blue">Support</li>
+              
+                <li className="normal-text cursor-pointer text-[16px] hover:text-brand-blue">
+                <Link href="/features">
+                Features
+                </Link>
+                </li>
+                <li className="normal-text cursor-pointer text-[16px] hover:text-brand-blue" >
+                <Link href="/about-us">
+                    About Us
+                </Link>
+                </li>
+                <li className="normal-text cursor-pointer text-[16px] hover:text-brand-blue">
+                <Link href="/support">
+                    Support
+                </Link>
+                </li>
     
-                <li className="normal-text cursor-pointer text-[16px] hover:text-brand-blue">Faq</li>
+                <li className="normal-text cursor-pointer text-[16px] hover:text-brand-blue">
+                <Link href="/faq">
+                FAQs
+                </Link>
+                </li>
 
             </ul>
         </div>

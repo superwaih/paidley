@@ -1,6 +1,7 @@
 import { ArrowDouble } from "@/public/svgs/Arrow-double";
 import { BankIcon } from "@/public/svgs/bank";
 import { CreditCard } from "@/public/svgs/credit-card";
+import { User } from "@/public/svgs/Users";
 
 export const Accounts= [
     {
@@ -54,5 +55,25 @@ export const Faqs = [
     },
     
 
+]
+
+export const values =[
+    {
+        id:1,
+        feature: "Team works drives result ",
+        desc: "Our production is laid back on collaborative effort with different team across multiple departments to yield significant result",
+        icon: User
+    },
+    {
+        id:1,
+        feature: "Team works drives result ",
+        desc: "Our production is laid back on collaborative effort with different team across multiple departments to yield significant result",
+        icon: User
+    },{
+        id:1,
+        feature: "Team works drives result ",
+        desc: "Our production is laid back on collaborative effort with different team across multiple departments to yield significant result",
+        icon: User
+    },
 ]
 
