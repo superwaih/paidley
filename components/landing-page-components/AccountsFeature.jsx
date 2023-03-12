@@ -10,7 +10,7 @@ const AccountsFeature = () => {
   return (
     <div className='m-auto flex flex-col md:flex-row gap-12 justify-between  w-[80%] py-8'>
          <div className='md:hidden flex-col flex justify-between space-y-8'>
-           <h3 className='font-semibold text-3xl leading-12'>Free USD and EUR accounts for all your international transactions</h3>
+           <h3 className='font-semibold text-xl md:text-3xl leading-12'>Free USD and EUR accounts for all your international transactions</h3>
             <p className='text-[#4C5561] leading-12'>Free USD and EUR accounts for all your international transactions</p>
            </div>
         <div className='grid w-full gap-5 grid-cols-1 lg:grid-cols-2'>
@@ -28,14 +28,14 @@ const AccountsFeature = () => {
 
             <div className='flex  md:hidden flex-row justify-between gap-4'>
                 <Image
-                    width={0}
-                    height={0}
+                    width={120}
+                    height={120}
                     src={ImageOne}
                     alt=""
                 />
                 <Image
-                    width={0}
-                    height={0}
+                    width={120}
+                    height={120}
                     src={ImageTwo}
                     alt=""
                 />

@@ -29,3 +29,7 @@ export const Accounts= [
     },
 ]
 
+export const Faqs = [
+    {}
+]
+
