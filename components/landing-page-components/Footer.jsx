@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className='bg-[#E8F7FD] mt-8'>
       <div className='m-auto w-[80%] py-6'>
-       <div className='grid grid-cols-5 py-6 w-full'>
+       <div className='grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5 py-6 w-full'>
         
         <div className='flex flex-col space-y-3'>
           <h5 className='text-[#283341] font-semibold'>Company</h5>
@@ -75,7 +75,7 @@ const Footer = () => {
         
 
        </div>
-       <div className='py-2 border-t flex items-center gap-32  border-gray-300'>
+       <div className='py-2 border-t md:flex-row flex-col flex items-center gap-3 md:gap-32  border-gray-300'>
         <Image
           width={0}
           height={0}
