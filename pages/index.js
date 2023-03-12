@@ -6,6 +6,7 @@ import HeroBanner from '@/components/landing-page-components/HeroBanner'
 import AccountsFeature from '@/components/landing-page-components/AccountsFeature'
 import Setup from '@/components/landing-page-components/Setup'
 import Faq from '@/components/landing-page-components/Faq'
+import Footer from '@/components/landing-page-components/Footer'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,6 +26,7 @@ export default function Home() {
      <AccountsFeature />
      <Setup />
      <Faq />
+     <Footer />
       </main>
     </>
   )
