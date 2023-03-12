@@ -2,6 +2,14 @@ import Layout from "@/components/Layout";
 import React from "react";
 import Image from "next/image";
 import ImageOne from "../../public/images/team.png";
+import imageone from "../../public/images/about/imageone.png"
+import imagetwo from "../../public/images/about/imagetwo.png"
+import imagethree from "../../public/images/about/imagethree.png"
+import imagefour from "../../public/images/about/imagefour.png"
+import imagefive from "../../public/images/about/imagefive.png"
+import imagesix from "../../public/images/about/imagesix.png"
+import imageseven from "../../public/images/about/imageseven.png"
+
 import { values } from "@/utils/data";
 import Card from "@/components/landing-page-components/Card";
 const AboutUsPage = () => {
@@ -64,7 +72,7 @@ const AboutUsPage = () => {
           </div>
         </div>
 
-        <div className="py-9 border-[#CDDBEC] border-b">
+        <div className="py-9 flexible border-[#CDDBEC] border-b">
         <div className="flex flex-col space-y-5">
             <h3 className="text-2xl md:text-3xl font-semibold">
             Meet Our Team
@@ -73,6 +81,69 @@ const AboutUsPage = () => {
               "Our production is laid back on collaborative effort with different
               team across multiple departments to yield significant result"
             </p>
+          </div>
+
+          <div className="images gap-2 grid grid-cols-2 md:grid-cols-4 ">
+              <div>
+                <Image
+                  width={0}
+                  height={0}
+                  src={imageone}
+                  alt=""
+                />
+              </div>
+              <div>
+                <Image
+                  width={0}
+                  height={0}
+                  objectFit="cover"
+                  src={imagetwo}
+                  alt=""
+                />
+                 <Image
+                  width={0}
+                  height={0}
+                  objectFit="cover"
+                  src={imagethree}
+                  alt=""
+                />
+              </div>
+             
+
+              <div>
+                <Image
+                  width={0}
+                  height={0}
+                  objectFit="cover"
+                  src={imagesix}
+                  alt=""
+                />
+                 <Image
+                  width={0}
+                  height={0}
+                  objectFit="cover"
+                  src={imagefive}
+                  alt=""
+                />
+                
+              </div>
+              <div>
+                <Image
+                  width={0}
+                  height={0}
+                  objectFit="cover"
+                  src={imagefour}
+                  alt=""
+                />
+                 <Image
+                  width={0}
+                  height={0}
+                  objectFit="cover"
+                  src={imageseven}
+                  alt=""
+                />
+                
+              </div>
           </div>
         </div>
       </div>

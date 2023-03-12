@@ -15,6 +15,9 @@ module.exports = {
         "brand-color": "#306BB1",
         "brand-blue": "#0582FA"
 
+      },
+      backgroundImage:{
+        "bg-hero": "/public/"
       }
     },
   },
