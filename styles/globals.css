@@ -8,8 +8,14 @@ html,body{
     font-family: 'Inter', sans-serif;
 }
 
-@base{
+@layer base{
     .normal-text{
         @apply text-[#283341]
     } 
+    .content{
+        @apply m-auto w-[80%]
+    }
+    .btn{
+      @apply  bg-brand-color flex items-center gap-4 text-white p-4 rounded-lg w-fit
+    }
 }

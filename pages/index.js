@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Nav from '@/components/landing-page-components/Nav'
 import HeroBanner from '@/components/landing-page-components/HeroBanner'
+import AccountsFeature from '@/components/landing-page-components/AccountsFeature'
+import Setup from '@/components/landing-page-components/Setup'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,6 +21,8 @@ export default function Home() {
       <main >
      <Nav />
      <HeroBanner />
+     <AccountsFeature />
+     <Setup />
       </main>
     </>
   )

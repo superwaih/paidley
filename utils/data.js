@@ -1,5 +1,6 @@
 import { ArrowDouble } from "@/public/svgs/Arrow-double";
 import { BankIcon } from "@/public/svgs/bank";
+import { CreditCard } from "@/public/svgs/credit-card";
 
 export const Accounts= [
     {

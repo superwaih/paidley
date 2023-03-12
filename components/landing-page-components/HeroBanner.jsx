@@ -13,7 +13,7 @@ const HeroBanner = () => {
             Paidley is a financial technology company that develops and operates payment services, including virtual debit cards, foreign currency bank accounts with best low cost exchange rates and money services all from a smartphone app. Make easy international payments, send money across borders.
             </p>
 
-            <button className='bg-brand-color flex items-center gap-4 text-white p-4 rounded-lg max-w-[200px]'>
+            <button className='bg-brand-color flex items-center gap-4 text-white p-4 rounded-lg w-fit'>
                 Get Started <ArrowIcon /> </button>
         </div>
 
