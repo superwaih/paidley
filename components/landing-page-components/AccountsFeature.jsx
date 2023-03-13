@@ -13,7 +13,7 @@ const AccountsFeature = () => {
            <h3 className='font-semibold text-xl md:text-3xl leading-12'>Free USD and EUR accounts for all your international transactions</h3>
             <p className='text-[#4C5561] leading-12'>Free USD and EUR accounts for all your international transactions</p>
            </div>
-        <div className='grid w-full gap-5 grid-cols-1 lg:grid-cols-2'>
+        <div className='grid w-full gap-5 grid-cols-1 xl:grid-cols-2'>
             {Accounts.map((account) => (
                 <Card key={account.id} Icon={account.icon} feature={account.feature} desc={account.desc} />
             ))}
@@ -43,7 +43,7 @@ const AccountsFeature = () => {
 
             </div>
 
-            <div className='hidden md:flex md:flex-col lg:flex-row justify-between gap-4'>
+            <div className='hidden md:flex md:flex-col xl:flex-row justify-between gap-4'>
                 <Image
                     width={320}
                     height={320}
