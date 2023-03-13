@@ -45,14 +45,14 @@ const AccountsFeature = () => {
 
             <div className='hidden md:flex md:flex-col xl:flex-row justify-between gap-4'>
                 <Image
-                    width={320}
-                    height={320}
+                    width={300}
+                    height={30}
                     src={ImageThree}
                     alt=""
                 />
                 <Image
-                    width={320}
-                    height={320}
+                    width={300}
+                    height={300}
                     src={ImageFour}
                     alt=""
                 />

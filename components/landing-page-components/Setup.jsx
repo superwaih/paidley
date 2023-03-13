@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from "next/image"
+
 import Register from "../../public/images/register.png"
 const Setup = () => {
   return (

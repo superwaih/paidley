@@ -6,6 +6,7 @@
 
 html,body{
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 @layer base{
@@ -19,7 +20,7 @@ html,body{
         @apply m-auto w-[80%]
     }
     .btn{
-      @apply  bg-brand-color flex items-center gap-4 text-white p-4 rounded-lg w-fit hover:text-black hover:bg-[#FAFAFA] hover:border-[#306BB2] hover:border-[1px]
+      @apply  bg-brand-color flex items-center gap-4 text-white p-4 rounded-[12px] w-fit hover:text-black hover:bg-[#FAFAFA] hover:border-[#306BB2] hover:border-[1px]
     }
     .horizontal{
         @apply flex flex-col

@@ -17,7 +17,9 @@ module.exports = {
 
       },
       backgroundImage:{
-        "hero": "url(/images/bg-contact.png)"
+        "hero": "url(/images/bg-contact.png)",
+        "herosmall": "url(/images/bg-contact-small.png)"
+
       }
     },
   },

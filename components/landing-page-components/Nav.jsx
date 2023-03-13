@@ -2,9 +2,14 @@ import React from 'react'
 import Logo from "../../public/svgs/logo.svg"
 import { NGicon } from "../../public/svgs/ng.js"
 import Link from 'next/link'
+import { Menu } from '@headlessui/react'
 
 import Image from 'next/image'
 import { MenuIcon } from '@/public/svgs/MenuIcon'
+import Example from './Dropdown'
+
+
+
 const Nav = () => {
   return (
     <nav className='m-auto w-[80%] bg-mainBg  flex py-4 justify-between'>
@@ -23,9 +28,8 @@ const Nav = () => {
             <ul className='flex justify-between py-3 items-center gap-8 '>
               
                 <li className="normal-text cursor-pointer text-[16px] hover:text-brand-blue">
-                <Link href="/features">
-                Features
-                </Link>
+                    <Example />
+                
                 </li>
                 <li className="normal-text cursor-pointer text-[16px] hover:text-brand-blue" >
                 <Link href="/about-us">
@@ -51,15 +55,15 @@ const Nav = () => {
             <button className='bg-[#FAFAFA] border-[#306BB2] border-[1px] px-5 py-3 rounded-[12px]'>Sign in</button>
            <div className='flex gap-2 justify-center items-center'>
             <NGicon />
-           <select className='py-4' name="country" id="">
+           <select className='py-4 bg-inherit cursor-pointer' name="country" id="">
                 <option value="">
                     NG</option>
             </select>
            </div>
         </div>
 
-        <div className='lg:hidden'>
-            <MenuIcon />
+        <div className='lg:hidden cursor-pointer'>
+            <MenuIcon className="cursor-pointer" />
         </div>
 
     </nav>
