@@ -15,7 +15,6 @@ const Setup = () => {
               <Image
                 width={0}
                 height={0}
-                objectFit="cover"
                 src={Register}
                 alt=""
               />

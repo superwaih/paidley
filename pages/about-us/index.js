@@ -78,8 +78,8 @@ const AboutUsPage = () => {
             Meet Our Team
             </h3>
             <p className="normal-text leading-12 max-w-2xl italic text-lg">
-              "Our production is laid back on collaborative effort with different
-              team across multiple departments to yield significant result"
+            &ldquoOur production is laid back on collaborative effort with different
+              team across multiple departments to yield significant result &ldquo
             </p>
           </div>
 

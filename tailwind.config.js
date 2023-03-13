@@ -17,7 +17,7 @@ module.exports = {
 
       },
       backgroundImage:{
-        "bg-hero": "/public/"
+        "hero": "url(/images/bg-contact.png)"
       }
     },
   },
