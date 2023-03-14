@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from "../../public/svgs/logo.svg"
 import { NGicon } from "../../public/svgs/ng.js"
 import Link from 'next/link'
@@ -7,12 +7,16 @@ import { Menu } from '@headlessui/react'
 import Image from 'next/image'
 import { MenuIcon } from '@/public/svgs/MenuIcon'
 import Example from './Dropdown'
+import {AiOutlineClose} from "react-icons/ai"
+import MobileNav from './MobileNav'
 
 
 
 const Nav = () => {
+    const[toggleNav, setToggleNav] = useState(false)
   return (
-    <nav className='m-auto w-[80%] bg-mainBg  flex py-4 justify-between'>
+
+    <nav className='m-auto relative w-[80%] bg-mainBg  flex py-4 justify-between items-center'>
         <div className="logo cursor-pointer">
            <Link href="/"> 
            <Image
@@ -62,9 +66,13 @@ const Nav = () => {
            </div>
         </div>
 
-        <div className='lg:hidden cursor-pointer'>
-            <MenuIcon className="cursor-pointer" />
+        <div 
+        onClick={()=> setToggleNav(!toggleNav)}
+        className='lg:hidden cursor-pointer'>
+            {toggleNav ? <AiOutlineClose className='text-3xl text-center text-brand-color ' /> : <MenuIcon className="cursor-pointer" />}
+            
         </div>
+       {toggleNav && (<MobileNav />)} 
 
     </nav>
   )
