@@ -7,6 +7,8 @@ import HeroTwo from "../../public/images/features/card-hero-2.png"
 import Image from 'next/image'
 import { ArrowIcon } from '@/public/svgs/Arrow-Right'
 import FootBanner from '@/components/landing-page-components/FootBanner'
+import { motion } from 'framer-motion'
+import { fadeIn } from '@/variants'
 const FeaturesPage = () => {
   return (
 
@@ -19,7 +21,11 @@ const FeaturesPage = () => {
       </Head>
     <Layout>
     <div className='w-full bg-[#E8F7FD] pt-16 pb-8' >
-        <div className='m-auto flex items-center  space-y-5 flex-col-reverse lg:flex-row justify-center w-[80%]'>
+        <motion.div 
+        variants={fadeIn("down")}
+        initial='hidden'
+        whileInView={'show'}
+        className='m-auto flex items-center  space-y-5 flex-col-reverse lg:flex-row justify-center w-[80%]'>
         <div className="hero__text w-full  lg:w-1/2 flex flex-col space-y-6">
             <h3 className='text-brand-blue tracking-normal lg:max-w-lg leading-20  font-semibold text-3xl md:text-5xl'>No better way to spend globally</h3>
 
@@ -39,7 +45,7 @@ const FeaturesPage = () => {
             />
         </div>
         
-        </div>    
+        </motion.div>    
     </div>
 
     <div className='w-full  pt-16 pb-8' >
@@ -62,14 +68,19 @@ const FeaturesPage = () => {
     
         </div>
 
-        <div className='hero__image w-full lg:w-1/2 flex items-center justify-center lg:items-center lg:justify-center'>
+        <motion.div
+        variants={fadeIn("left")}
+        initial='hidden'
+        whileInView={'show'}
+        
+        className='hero__image w-full lg:w-1/2 flex items-center justify-center lg:items-center lg:justify-center'>
             <Image
                 width={0}
                 height={0}
                 src={HeroTwo}
                 alt=""
             />
-        </div>
+        </motion.div>
         
         </div>    
     </div>
