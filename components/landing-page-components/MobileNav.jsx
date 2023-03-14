@@ -47,7 +47,7 @@ const MobileNav = () => {
             )}
             
             <li className='font-semibold'>
-            <Link href="/contact-us">
+            <Link href="/support">
                 Contact us
             </Link>
             </li>
