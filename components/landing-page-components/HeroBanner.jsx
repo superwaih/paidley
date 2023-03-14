@@ -19,7 +19,9 @@ const HeroBanner = () =>{
     <motion.div 
     initial='hidden'
     whileInView={'show'}
-     variants={container} className='w-full bg-[#E8F7FD] pt-16 pb-8' >
+     variants={container} 
+     
+     className='w-full bg-[#E8F7FD] pt-16 pb-8' >
         <div className='m-auto flex space-y-5 flex-col lg:flex-row justify-between w-[80%]'>
         <div className="hero__text w-full lg:w-1/2 flex flex-col space-y-6">
             <motion.h3 variants={fadeIn("down")} className='text-brand-blue leading-16 max-w-2xl font-semibold text-3xl md:text-4xl'>Expand your horizons, Invest, spend and exchange currencies globally.</motion.h3>

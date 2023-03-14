@@ -1,9 +1,17 @@
 import React, { useState } from 'react'
 import {BsChevronDown, BsChevronRight} from "react-icons/bs"
+import { motion } from 'framer-motion'
+import { fadeIn } from '@/variants'
+import Link from 'next/link'
 const MobileNav = () => {
     const [toggleFeature, setTogglefeature] = useState(false)
   return (
-    <div className='bg-[#CDDBEC] lg:hidden w-full  py-6 px-7  absolute top-[100%] rounded-md left-[70%] right-4'>
+    <motion.div 
+    initial='hidden'
+    whileInView={'show'}
+     variants={fadeIn("left")} 
+    
+    className='bg-[#CDDBEC] items-center justify-center flex lg:hidden w-[200px]  py-6 px-7  absolute top-[100%] rounded-md left-[33%] sm:left-[73%] md:left-[78%] '>
         <ul className='horizontal space-y-8'>
             <li 
             onClick={() => setTogglefeature(!toggleFeature)}
@@ -14,20 +22,49 @@ const MobileNav = () => {
             {toggleFeature && (
                
                 <ul className='flex flex-col gap-3'>
-                    <li className='text-[12px] text-[#011A32]'>Card</li>
-                    <li className='text-[12px] text-[#011A32]'>Transfer</li>
-                    <li className='text-[12px] text-[#011A32]'>Convert Currency</li>
-                    <li className='text-[12px] text-[#011A32]'>Virtual Account</li>
+                    <li className='text-[12px] text-[#011A32]'>
+                    <Link href="/features">
+                        Card
+            </Link>
+                    </li>
+                    <li className='text-[12px] text-[#011A32]'>
+                    <Link href="/features/transfer">
+                        Transfer
+            </Link>
+                    </li>
+                    <li className='text-[12px] text-[#011A32]'>
+                    <Link href="/features/convert">
+                        Foreign Accounts
+            </Link>
+                    </li>
+                    <li className='text-[12px] text-[#011A32]'>
+                    <Link href="/features/virtual">
+                        Virtual Account
+            </Link>
+                    </li>
                 </ul>
               
             )}
-            <li className='font-semibold'>Contact Us</li>
-            <li className='font-semibold'>About us</li>
-            <li className='font-semibold'>FAQs</li>
+            
+            <li className='font-semibold'>
+            <Link href="/contact-us">
+                Contact us
+            </Link>
+            </li>
+            <li className='font-semibold'>
+            <Link href="/about-us">
+                About Us
+            </Link>
+            </li>
+            <li className='font-semibold'>
+            <Link href="/faq">
+                FAQs
+            </Link>
+            </li>
 
         </ul>
    
-    </div>
+    </motion.div>
   )
 }
 
