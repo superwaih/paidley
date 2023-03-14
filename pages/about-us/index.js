@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import React from "react";
 import Image from "next/image";
+import Hero from "../../public/images/team-2.png"
 import ImageOne from "../../public/images/team.png";
 import imageone from "../../public/images/about/imageone.png"
 import imagetwo from "../../public/images/about/imagetwo.png"
@@ -73,7 +74,7 @@ const AboutUsPage = () => {
         </div>
 
         <div className="py-9 flexible border-[#CDDBEC] border-b">
-        <div className="flex flex-col space-y-5">
+        <div className="flex w-full flex-col space-y-5">
             <h3 className="text-2xl md:text-3xl font-semibold">
             Meet Our Team
             </h3>
@@ -82,8 +83,15 @@ const AboutUsPage = () => {
               team across multiple departments to yield significant result&ldquo;
             </p>
           </div>
-
-          <div className="images gap-2 grid grid-cols-2 md:grid-cols-4 ">
+            <div className="w-full">
+              <Image
+                width={0}
+                height={0}
+                src={Hero}
+                alt=""
+              />
+            </div>
+          {/* <div className="images gap-2 grid grid-cols-2 md:grid-cols-4 ">
               <div>
                 <Image
                   width={0}
@@ -144,7 +152,7 @@ const AboutUsPage = () => {
                 />
                 
               </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </Layout>

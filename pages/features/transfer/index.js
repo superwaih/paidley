@@ -56,7 +56,7 @@ const TransferScreen = () => {
     
         </div>
 
-        <div className='hero__image w-full lg:w-1/2 flex items-center justify-center lg:items-end lg:justify-end'>
+        <div className='hero__image w-full lg:w-1/2 flex items-center justify-center lg:items-center lg:justify-center'>
             <Image
                 width={0}
                 height={0}
