@@ -12,9 +12,9 @@ const TransferScreen = () => {
 <div className='w-full bg-[#E8F7FD] pt-16 pb-8' >
 <div className='m-auto flex items-center  space-y-5 flex-col-reverse lg:flex-row justify-center w-[80%]'>
         <div className="hero__text w-full  lg:w-1/2 flex flex-col space-y-6">
-            <h3 className='text-brand-blue tracking-normal lg:max-w-2xl leading-20  font-semibold text-3xl md:text-5xl'>No better way to spend globally</h3>
+            <h3 className='text-brand-blue tracking-normal lg:max-w-2xl leading-20  font-semibold text-2xl md:text-4xl lg:text-6xl'>No better way to spend globally</h3>
 
-            <p className='text-[#283341] tracking-wider lg:max-w-2xl leading-16 '>
+            <p className='text-[#283341] tracking-wider   lg:max-w-2xl leading-16 '>
             Spend freely with a debit card that makes your intentional payments easier. Get a paidley virtual card to shop, or payfor subscriptions and gifts online anywhere in the world.
             </p>
 

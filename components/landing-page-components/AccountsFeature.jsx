@@ -10,8 +10,8 @@ const AccountsFeature = () => {
   return (
     <div className='m-auto flex flex-col md:flex-row gap-12 justify-between  w-[80%] py-8'>
          <div className='md:hidden flex-col flex justify-between space-y-8'>
-           <h3 className='font-semibold text-xl md:text-3xl leading-12'>Free USD and EUR accounts for all your international transactions</h3>
-            <p className='text-[#4C5561] leading-12'>Free USD and EUR accounts for all your international transactions</p>
+           <h3 className='font-semibold text-lg md:text-2xl leading-12'>Free USD and EUR accounts for all your international transactions</h3>
+            <p className='text-[#4C5561] text-md md:text-lg leading-12'>Free USD and EUR accounts for all your international transactions</p>
            </div>
         <div className='grid w-full gap-5 grid-cols-1 xl:grid-cols-2'>
             {Accounts.map((account) => (
@@ -21,8 +21,8 @@ const AccountsFeature = () => {
 
         <div className='flex flex-col space-y-8 p-4'>
            <div className='flex flex-col justify-between space-y-8'>
-           <h3 className='font-semibold text-3xl leading-12'>Free USD and EUR accounts for all your international transactions</h3>
-            <p className='text-[#4C5561] leading-12'>Free USD and EUR accounts for all your international transactions</p>
+           <h3 className='font-semibold text-lg md:text-2xl leading-12'>Free USD and EUR accounts for all your international transactions</h3>
+            <p className='text-[#4C5561] text-md md:text-lg leading-12'>Free USD and EUR accounts for all your international transactions</p>
            </div>
 
 

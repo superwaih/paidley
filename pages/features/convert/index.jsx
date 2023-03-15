@@ -45,7 +45,7 @@ const ConvertCurrency = () => {
     <div className='w-full  pt-16 pb-8' >
         <div className='m-auto flex space-y-5 flex-col items-center lg:flex-row justify-between w-[80%]'>
         <div className="hero__text w-full lg:w-1/2 flex flex-col space-y-6">
-            <h3 className='normal-text leading-20 max-w-lg font-semibold text-xl md:text-3xl'>Converting your currency all made easy</h3>
+            <h3 className='normal-text leading-20 max-w-lg font-semibold md:text-[60px] text-[24px]'>Converting your currency all made easy</h3>
             <div className='horizontal space-y-3'>
               <h3 className='normal-text font-semibold text-xl'>Convert your funds in seconds</h3>
               <p className='gray-text leading-16 max-w-lg'>

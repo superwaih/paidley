@@ -24,7 +24,7 @@ const HeroBanner = () =>{
      className='w-full bg-[#E8F7FD] pt-16 pb-8' >
         <div className='m-auto flex space-y-5 flex-col lg:flex-row justify-between w-[80%]'>
         <div className="hero__text w-full lg:w-1/2 flex flex-col space-y-6">
-            <motion.h3 variants={fadeIn("down")} className='text-brand-blue leading-16 max-w-2xl font-semibold text-3xl md:text-4xl'>Expand your horizons, Invest, spend and exchange currencies globally.</motion.h3>
+            <motion.h3 variants={fadeIn("down")} className='text-brand-blue leading-16 md:max-w-2xl font-semibold text-2xl md:text-4xl'>Expand your horizons, Invest, spend and exchange currencies globally.</motion.h3>
 
             <motion.p variants={fadeIn("down")} className='text-[#283341] leading-16 max-w-2xl'>
             Paidley is a financial technology company that develops and operates payment services, including virtual debit cards, foreign currency bank accounts with best low cost exchange rates and money services all from a smartphone app. Make easy international payments, send money across borders.

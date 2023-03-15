@@ -53,7 +53,7 @@ const FeaturesPage = () => {
         <div className="hero__text w-full lg:w-1/2 flex flex-col space-y-6">
             <h3 className='normal-text leading-20 max-w-lg font-semibold text-xl md:text-3xl'>Use card anywhere in the world</h3>
             <div className='horizontal space-y-3'>
-              <h3 className='normal-text font-semibold text-xl'>Accepted Globally</h3>
+              <h3 className='normal-text font-semibold text-lg md:text-xl'>Accepted Globally</h3>
               <p className='gray-text leading-16 max-w-lg'>
               You get a mastercard that is accepted on every digital store. so you no longer have to worry abut your spotify, netflix and other streaming subsciptions. Shop on amazin, ASOS, Zara, and other shopping sites. Pay fight tickets and more online.
             </p>
