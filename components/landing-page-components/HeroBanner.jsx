@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Hero from "../../public/images/hero.png"
 import Image from 'next/image'
 import { ArrowIcon } from '@/public/svgs/Arrow-Right'
 import { motion } from 'framer-motion'
 import { fadeIn } from '@/variants'
+import { GetStartedModal } from '../modals/GetStartedModal'
 
 const container = {
   hidden: {},
@@ -15,6 +16,7 @@ const container = {
   }
 }
 const HeroBanner = () =>{
+  const [isOpen, setIsOpen] = useState(false)
   return (
     <motion.div 
     initial='hidden'
@@ -30,7 +32,7 @@ const HeroBanner = () =>{
             Paidley is a financial technology company that develops and operates payment services, including virtual debit cards, foreign currency bank accounts with best low cost exchange rates and money services all from a smartphone app. Make easy international payments, send money across borders.
             </motion.p>
 
-            <motion.button variants={fadeIn("down")} className='bg-brand-color flex items-center gap-4 text-white p-4 rounded-[12px] w-fit'>
+            <motion.button onClick={() => setIsOpen(true)} variants={fadeIn("down")} className='bg-brand-color flex items-center gap-4 text-white p-4 rounded-[12px] w-fit'>
                 Get Started <ArrowIcon /> </motion.button>
         </div>
 
@@ -45,6 +47,7 @@ const HeroBanner = () =>{
                 alt=""
             />
         </motion.div>
+        <GetStartedModal isOpen={isOpen} setIsOpen={setIsOpen} />
         
         </div>    
     </motion.div>
