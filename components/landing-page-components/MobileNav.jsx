@@ -11,7 +11,7 @@ const MobileNav = () => {
     whileInView={'show'}
      variants={fadeIn("left")} 
     
-    className='bg-[#CDDBEC] items-center justify-center flex lg:hidden w-[180px]  py-6 px-7  absolute top-[100%] rounded-md -right-[10%] '>
+    className='bg-[#CDDBEC] z-50 items-center justify-center flex lg:hidden w-[180px]  py-6 px-7  absolute top-[100%] rounded-md -right-[10%] '>
         <ul className='horizontal space-y-8'>
             <li 
             onClick={() => setTogglefeature(!toggleFeature)}

@@ -15,7 +15,7 @@ const AccountsFeature = () => {
            </div>
         <div className='grid w-full gap-5 grid-cols-1 xl:grid-cols-2'>
             {Accounts.map((account) => (
-                <Card key={account.id} Icon={account.icon} feature={account.feature} desc={account.desc} />
+                <Card key={account.id} href={account.href} Icon={account.icon} feature={account.feature} desc={account.desc} />
             ))}
         </div>
 
