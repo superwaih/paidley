@@ -48,7 +48,11 @@ const FeaturesPage = () => {
         </motion.div>    
     </div>
 
-    <div className='w-full  pt-16 pb-8' >
+    <motion.div 
+    variants={fadeIn("down")}
+    initial='hidden'
+    whileInView={'show'} 
+    className='w-full  pt-16 pb-8' >
         <div className='m-auto flex space-y-5 flex-col items-center lg:flex-row justify-between w-[80%]'>
         <div className="hero__text w-full lg:w-1/2 flex flex-col space-y-6">
             <h3 className='normal-text leading-20 max-w-lg font-semibold text-xl md:text-3xl'>Use card anywhere in the world</h3>
@@ -83,7 +87,7 @@ const FeaturesPage = () => {
         </motion.div>
         
         </div>    
-    </div>
+    </motion.div>
     <FootBanner />
 
     </Layout>

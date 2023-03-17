@@ -11,9 +11,6 @@ export function GetStartedModal({ isOpen, setIsOpen }) {
     setIsOpen(false);
   }
 
-  function openModal() {
-    setIsOpen(true);
-  }
 
 
   return (

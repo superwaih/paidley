@@ -2,7 +2,8 @@ import Layout from '@/components/Layout'
 import React from 'react'
 import Hero from "../../../public/images/features/transfer-hero.png"
 import HeroTwo from "../../../public/images/features/transfer-hero-2.png"
-
+import { motion } from 'framer-motion'
+import { fadeIn } from '@/variants'
 import Image from 'next/image'
 import FootBanner from '@/components/landing-page-components/FootBanner'
 const TransferScreen = () => {
@@ -10,8 +11,16 @@ const TransferScreen = () => {
     <Layout>
 
 <div className='w-full bg-[#E8F7FD] pt-16 pb-8' >
-<div className='m-auto flex items-center  space-y-5 flex-col-reverse lg:flex-row justify-center w-[80%]'>
-        <div className="hero__text w-full  lg:w-1/2 flex flex-col space-y-6">
+<motion.div
+ variants={fadeIn("down")}
+        initial='hidden'
+        whileInView={'show'} 
+
+className='m-auto flex items-center  space-y-8 flex-col-reverse lg:flex-row justify-center w-[80%]'>
+        <div 
+        
+        
+        className="hero__text w-full  lg:w-1/2 flex flex-col space-y-6">
             <h3 className='text-brand-blue tracking-normal lg:max-w-2xl leading-20  font-semibold text-2xl md:text-4xl lg:text-6xl'>No better way to spend globally</h3>
 
             <p className='text-[#283341] tracking-wider   lg:max-w-2xl leading-16 '>
@@ -21,19 +30,27 @@ const TransferScreen = () => {
     
         </div>
 
-        <div className='hero__image w-full lg:w-1/2 flex items-center justify-center lg:items-center lg:justify-center'>
+        <motion.div 
+        variants={fadeIn("down")}
+        initial='hidden'
+        whileInView={'show'}
+        className='hero__image w-full lg:w-1/2 flex items-center justify-center lg:items-center lg:justify-center'>
             <Image
                 width={0}
                 height={0}
                 src={Hero}
                 alt=""
             />
-        </div>
+        </motion.div>
         
-        </div>   
+        </motion.div>   
     </div>
 
-    <div className='w-full  pt-16 pb-8' >
+    <motion.div
+    variants={fadeIn("down")}
+        initial='hidden'
+        whileInView={'show'} 
+    className='w-full  pt-16 pb-8' >
         <div className='m-auto flex space-y-5 flex-col items-center lg:flex-row justify-between w-[80%]'>
         <div className="hero__text w-full lg:w-1/2 flex flex-col space-y-6">
             <h3 className='normal-text leading-20 max-w-lg font-semibold text-xl md:text-3xl'>Use card anywhere in the world</h3>
@@ -66,7 +83,7 @@ const TransferScreen = () => {
         </div>
         
         </div>    
-    </div>
+    </motion.div>
     <FootBanner />
     </Layout>
   )

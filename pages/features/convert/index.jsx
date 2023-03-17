@@ -5,7 +5,8 @@ import React from 'react'
 import Image from 'next/image'
 import Hero from "../../../public/images/features/convert-hero.png"
 import HeroTwo from "../../../public/images/features/convert-hero-2.png"
-
+import { motion } from 'framer-motion'
+import { fadeIn } from '@/variants'
 const ConvertCurrency = () => {
   return (
 
@@ -19,7 +20,11 @@ const ConvertCurrency = () => {
     
     <Layout>
  <div className='w-full bg-[#E8F7FD] pt-16 pb-8' >
-        <div className='m-auto flex items-center  space-y-5 flex-col-reverse lg:flex-row justify-center w-[80%]'>
+        <motion.div 
+        variants={fadeIn("down")}
+        initial='hidden'
+        whileInView={'show'} 
+        className='m-auto flex items-center  space-y-5 flex-col-reverse lg:flex-row justify-center w-[80%]'>
         <div className="hero__text w-full  lg:w-1/2 flex flex-col space-y-6">
             <h3 className='text-brand-blue tracking-normal lg:max-w-lg leading-20  font-semibold text-3xl md:text-5xl'>Convert Your Money between Currencies Speedily</h3>
 
@@ -39,10 +44,14 @@ const ConvertCurrency = () => {
             />
         </div>
         
-        </div>    
+        </motion.div>    
     </div>
 
-    <div className='w-full  pt-16 pb-8' >
+    <motion.div 
+    variants={fadeIn("down")}
+    initial='hidden'
+    whileInView={'show'} 
+    className='w-full  pt-16 pb-8' >
         <div className='m-auto flex space-y-5 flex-col items-center lg:flex-row justify-between w-[80%]'>
         <div className="hero__text w-full lg:w-1/2 flex flex-col space-y-6">
             <h3 className='normal-text leading-20 max-w-lg font-semibold md:text-[60px] text-[24px]'>Converting your currency all made easy</h3>
@@ -79,7 +88,7 @@ const ConvertCurrency = () => {
         </div>
         
         </div>    
-    </div>
+    </motion.div>
     <FootBanner />
     </Layout>
     </>

@@ -1,11 +1,16 @@
 import React from 'react'
 import Image from "next/image"
-
+import { motion } from 'framer-motion'
+import { fadeIn } from '@/variants'
 import Register from "../../public/images/register.png"
 const Setup = () => {
   return (
     <div className='bg-[#E8F7FD] py-12'>
-        <div className='w-[80%] flex flex-col md:flex-row space-y-4 justify-between m-auto'>
+        <motion.div 
+        variants={fadeIn("down")}
+        initial='hidden'
+        whileInView={'show'} 
+        className='w-[80%] flex flex-col md:flex-row space-y-4 justify-between m-auto'>
 
             <div className='flex flex-col space-y-8 w-full justify-center md:w-1/2'>
                 <p className='font-semibold text-xl md:text-3xl max-w-md'>How to Set up a free account on Paidley with no hassle or Stress</p>
@@ -21,7 +26,7 @@ const Setup = () => {
               />
 
             </div>
-        </div>
+        </motion.div>
         
     </div>
   )
