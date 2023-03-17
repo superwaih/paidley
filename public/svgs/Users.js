@@ -10,27 +10,27 @@ export function User() {
       <path
         d="M18.5045 19.2561H18.9457C19.9805 19.2561 20.8036 18.7846 21.5427 18.1252C23.4202 16.4503 19.0067 14.7559 17.5 14.7559"
         stroke="#306BB2"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M15 5.32463C15.2271 5.27959 15.4629 5.25586 15.7048 5.25586C17.5247 5.25586 19 6.59901 19 8.25586C19 9.91271 17.5247 11.2559 15.7048 11.2559C15.4629 11.2559 15.2271 11.2321 15 11.1871"
         stroke="#306BB2"
-        stroke-width="1.5"
-        stroke-linecap="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
       />
       <path
         d="M4.78256 15.367C3.68218 15.9989 0.797061 17.2889 2.55429 18.9033C3.41269 19.6919 4.36872 20.2559 5.57068 20.2559H12.4293C13.6313 20.2559 14.5873 19.6919 15.4457 18.9033C17.2029 17.2889 14.3178 15.9989 13.2174 15.367C10.6371 13.8855 7.36292 13.8855 4.78256 15.367Z"
         stroke="#306BB2"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M13 7.25586C13 9.465 11.2091 11.2559 9 11.2559C6.79086 11.2559 5 9.465 5 7.25586C5 5.04672 6.79086 3.25586 9 3.25586C11.2091 3.25586 13 5.04672 13 7.25586Z"
         stroke="#306BB2"
-        stroke-width="1.5"
+        strokeWidth="1.5"
       />
     </svg>
   );
