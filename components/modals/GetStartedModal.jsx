@@ -1,8 +1,11 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import Image from "next/image";
-import imageOne from "../../public/images/stay-tuned.png";
+// import imageOne from "../../public/images/stay-tuned.png";
+import imageOne from "../../public/svgs/rocket.svg"
+import LogoOne from "../../public/svgs/logo.svg"
 import imageTwo from "../../public/images/stay-tuned-small.png";
+import LogoTwo from "../../public/svgs/logo-white.svg"
 import { ArrowIcon } from "@/public/svgs/Arrow-Right";
 
 export function GetStartedModal({ isOpen, setIsOpen }) {
@@ -44,13 +47,24 @@ export function GetStartedModal({ isOpen, setIsOpen }) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="max-w-[980px] min-h-[600px] transform overflow-hidden flexible rounded-2xl bg-[#E8F7FD] p-12 text-left
+              <Dialog.Panel className="max-w-[980px] min-h-[300px] transform overflow-hidden rounded-2xl bg-[#E8F7FD] px-4 py-10 md:p-12 text-left
               
               justify-evenly items-center
               align-middle shadow-xl transition-all">
-                <div className="mt-2 flexible justify-center items-center">
+             
+             <div className="flexible space-y-4">
+             <div className="flex md:hidden w-full items-start justify-start ">
+               <Image
+                width={0}
+                height={0}
+                src={LogoOne}
+                alt=""
+               />
+               </div>
+             <div className="mt-2 flexible w-full 
+             justify-start items-start md:justify-center md:items-center">
                   <div className="flex justify-center flex-col space-y-6">
-                    <h3 className="text-xl md:text-5xl max-w-md text-[#0582FA]">
+                    <h3 className="text-2xl md:text-5xl max-w-sm text-[#0582FA]">
                       Stay tuned we are launching soon
                     </h3>
                     <p className="font-semibold text-[#011A32]">
@@ -61,10 +75,14 @@ export function GetStartedModal({ isOpen, setIsOpen }) {
                       <input
                         type="text"
                         className="bg-[#EAF0F6] border-[#306BB1] border-[1px] w-full rounded-[12px] p-4"
-                        placeholder="Enter your Email"
+                        placeholder="Email"
                       />
-                      <button className="
-                      bg-brand-color flex items-center gap-3 text-white p-3 rounded-r-[12px] border w-fit hover:bg-brand-color/50 hover:bg-[#FAFAFA] hover:border-[#306BB2]
+                      <button 
+                      onClick={closeModal}
+                      
+                      className="
+                      bg-brand-color flex items-center 
+                      gap-2 text-white text-sm p-4 outline-none rounded-r-[12px] border w-fit hover:bg-brand-color/50 hover:bg-[#FAFAFA] hover:border-[#306BB2]
                       
                       absolute right-0 top-0 bottom-0 ">
                         Count me in <ArrowIcon />
@@ -73,28 +91,32 @@ export function GetStartedModal({ isOpen, setIsOpen }) {
                   </div>
                 </div>
 
-                {/* <div className="mt-4">
-                  <button
-                    type="button"
-                    className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                    onClick={closeModal}
-                  >
-                    Got it, thanks!
-                  </button>
-                </div> */}
 
-                <div className="px-12">
+                <div className="px-12  py-4 flex justify-center items-center md:justify-end md:items-end">
                   <Image width={0} height={0} src={imageOne} alt="" />
                 </div>
-                <div className="hidden">
-                  <Image width={300} height={300} src={imageOne} alt="" />
-                </div>
-
+             </div>
                
+
+               <div className="hidden pt-12 md:flex h-full w-full items-end justify-end ">
+               <Image
+                width={0}
+                height={0}
+                src={LogoTwo}
+                alt=""
+               />
+               </div>
+
+
+             
+
+            
               </Dialog.Panel>
             </Transition.Child>
           </div>
         </div>
+
+       
       </Dialog>
     </Transition>
   );
