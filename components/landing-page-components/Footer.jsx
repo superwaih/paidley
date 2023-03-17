@@ -46,10 +46,26 @@ const Footer = () => {
         <div className='flex flex-col space-y-3'>
           <h5 className='text-[#283341] font-semibold'>Products</h5>
           <ul className='flex flex-col space-y-3'>
-            <li className='text-[14px] text-[#283341]'>Foreign Accounts</li>
-            <li className='text-[14px] text-[#283341]'>Virtual Cards</li>
-            <li className='text-[14px] text-[#283341]'>Currency Exchange</li>
-            <li className='text-[14px] text-[#283341]'>Money Transfer</li>
+            <li className='text-[14px] text-[#283341]'>
+            <Link href="/features/virtual">
+            Foreign Accounts
+            </Link>
+            </li>
+            <li className='text-[14px] text-[#283341]'>
+              <Link href="/features">
+              Virtual Cards
+              </Link>
+            </li>
+            <li className='text-[14px] text-[#283341]'>
+            <Link href="/features/convert">
+              Currency Exchange
+              </Link>
+            </li>
+            <li className='text-[14px] text-[#283341]'>
+            <Link href="/features/transfer">
+              Money Transfer
+              </Link>
+            </li>
 
 
           </ul>
@@ -57,7 +73,10 @@ const Footer = () => {
         <div className='flex flex-col space-y-3'>
           <h5 className='text-[#283341] font-semibold'>Support</h5>
           <ul className='flex flex-col space-y-3'>
+            <Link href="/support">
+            
             <li className='text-[14px] text-[#283341]'>Help Center</li>
+            </Link>
           </ul>
         </div>
 
