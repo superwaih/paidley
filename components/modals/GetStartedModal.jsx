@@ -5,6 +5,7 @@ import imageOne from "../../public/svgs/rocket.svg"
 import LogoOne from "../../public/svgs/logo.svg"
 import LogoTwo from "../../public/svgs/logo-white.svg"
 import { ArrowIcon } from "@/public/svgs/Arrow-Right";
+import useWindowDimensions from "@/hooks/useWindowDimension";
 
 export function GetStartedModal({ isOpen, setIsOpen }) {
   function closeModal() {
@@ -14,6 +15,10 @@ export function GetStartedModal({ isOpen, setIsOpen }) {
   function openModal() {
     setIsOpen(true);
   }
+
+  const{windowDimensions} = useWindowDimensions()
+
+  console.log(windowDimensions)
 
   return (
     <Transition appear show={isOpen} as={Fragment}>
