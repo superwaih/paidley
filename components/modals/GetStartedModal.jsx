@@ -78,7 +78,7 @@ export function GetStartedModal({ isOpen, setIsOpen }) {
                         placeholder="Email"
                       />
                       <button 
-                      onClick={closeModal}
+                      onClick={() =>closeModal}
                       
                       className="
                       bg-brand-color flex items-center 
