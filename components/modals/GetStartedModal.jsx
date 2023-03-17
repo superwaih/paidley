@@ -3,7 +3,7 @@ import { Fragment, useState } from "react";
 import Image from "next/image";
 import imageOne from "../../public/svgs/rocket.svg"
 import LogoOne from "../../public/svgs/logo.svg"
-import LogoTwo from "../../public/svgs/logo-white.svg"
+import LogoTwo from "../../public/svgs/Logo-white.svg"
 import { ArrowIcon } from "@/public/svgs/Arrow-Right";
 import useWindowDimensions from "@/hooks/useWindowDimension";
 
