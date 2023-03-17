@@ -1,10 +1,8 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
 import Image from "next/image";
-// import imageOne from "../../public/images/stay-tuned.png";
 import imageOne from "../../public/svgs/rocket.svg"
 import LogoOne from "../../public/svgs/logo.svg"
-import imageTwo from "../../public/images/stay-tuned-small.png";
 import LogoTwo from "../../public/svgs/logo-white.svg"
 import { ArrowIcon } from "@/public/svgs/Arrow-Right";
 
@@ -47,7 +45,7 @@ export function GetStartedModal({ isOpen, setIsOpen }) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="max-w-[980px] min-h-[300px] transform overflow-hidden rounded-2xl bg-[#E8F7FD] px-4 py-10 md:p-12 text-left
+              <Dialog.Panel className="max-w-[980px] min-h-[300px] transform overflow-hidden rounded-2xl bg-[#E8F7FD] px-4 py-8 md:p-12 text-left
               
               justify-evenly items-center
               align-middle shadow-xl transition-all">
@@ -74,15 +72,15 @@ export function GetStartedModal({ isOpen, setIsOpen }) {
                     <div className="relative">
                       <input
                         type="text"
-                        className="bg-[#EAF0F6] border-[#306BB1] border-[1px] w-full rounded-[12px] p-4"
+                        className="bg-[#EAF0F6] border-[#306BB1] border-[1px] w-full rounded-[12px] p-3 md:p-4"
                         placeholder="Email"
                       />
                       <button 
-                      onClick={() =>closeModal}
+                      onClick={() =>setIsOpen(false)}
                       
                       className="
                       bg-brand-color flex items-center 
-                      gap-2 text-white text-sm p-4 outline-none rounded-r-[12px] border w-fit hover:bg-brand-color/50 hover:bg-[#FAFAFA] hover:border-[#306BB2]
+                      gap-2 text-white text-sm p-2 outline-none rounded-r-[12px] border w-fit hover:bg-brand-color/50 hover:bg-[#FAFAFA] hover:border-[#306BB2]
                       
                       absolute right-0 top-0 bottom-0 ">
                         Count me in <ArrowIcon />
