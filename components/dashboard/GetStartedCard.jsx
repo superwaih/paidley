@@ -1,7 +1,8 @@
 import { CardIcon } from '@/public/svgs/card-icon'
 import { UserIcon } from '@/public/svgs/user-icon'
 import React from 'react'
-import { BsArrowBarUp, BsCaretLeft, BsPlus } from 'react-icons/bs'
+import { BsArrowBarUp, BsPlus } from 'react-icons/bs'
+import {RxCaretRight} from "react-icons/rx"
 
 const data = [
     {
@@ -34,7 +35,9 @@ const GetStartedCard = () => {
         {data.map((card) =>{
             const{id, content, sub, Icon} = card
             return(
-                <div key={id} className="py-4 max-w-md cursor-pointer border-[#306BB2] border rounded-lg justify-center shadow-md bg-[#F7FAFD] max-w-sm flex items-center gap-2">
+                <div key={id} className="py-4 max-w-md
+                 cursor-pointer border-[#306BB2] 
+                border rounded-lg justify-center shadow-md bg-[#F7FAFD] max-w-sm flex items-center gap-2">
                 <div>
                    <Icon className='text-[#306BB2] text-2xl' />
                 </div>
@@ -42,9 +45,10 @@ const GetStartedCard = () => {
                     <h3 className='font-bold normal-text'>{content}</h3>
                     <p className='gray-text text-sm'>{sub}</p>
                 </div>
-                <div>
-                    <BsCaretLeft />
-                </div>
+                {sub && (<div className='flex justify-end items-end '>
+                    <RxCaretRight className='text-2xl'/>
+                </div>)}
+                
 
             </div>
             )
