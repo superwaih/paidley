@@ -18,7 +18,7 @@ export function BankIcon() {
           stroke="#306BB2"
           strokeWidth="2"
           strokeLinecap="round"
-          stroke-linejoin="round"
+          strokeLinejoin="round"
         />
         <path
           d="M3.33203 8.33301V15.4163M6.66536 8.33301V15.4163"

@@ -1,6 +1,13 @@
+import { accountsIcon } from "@/public/svgs/account-icon";
 import { ArrowDouble } from "@/public/svgs/Arrow-double";
 import { BankIcon } from "@/public/svgs/bank";
+import { CardIcon } from "@/public/svgs/card-icon";
 import { CreditCard } from "@/public/svgs/credit-card";
+import { HomeIcon } from "@/public/svgs/home-icon";
+import { notificationIcon } from "@/public/svgs/notification-icon";
+import { SettingsIcon } from "@/public/svgs/setting-icon";
+import { transactionIcon } from "@/public/svgs/transaction-icon";
+import { UserIcon } from "@/public/svgs/user-icon";
 import { User } from "@/public/svgs/Users";
 
 export const Accounts= [
@@ -34,6 +41,52 @@ export const Accounts= [
     },
 ]
 
+export const tablinks = [
+    {
+        id: 1,
+        href: "/dashboard",
+        title: "home",
+        icon: HomeIcon
+    },
+    {
+        id: 2,
+        href: "/dashboard/accounts",
+        title: "accounts",
+        icon: accountsIcon
+    },
+    {
+        id: 3,
+        href: "/dashboard/transactions",
+        title: "transactions",
+        icon: transactionIcon
+    },
+    {
+        id: 4,
+        href: "/dashboard/cards",
+        title: "cards",
+        icon: CardIcon
+    },
+    {
+        id: 5,
+        href: "/dashboard/beneficiary",
+        title: "beneficiary",
+        icon: UserIcon
+    },
+
+    {
+        id: 6,
+        href: "/dashboard/notification",
+        title: "notification",
+        icon: notificationIcon
+    },
+    {
+        id: 7,
+        href: "/dashboard/settings",
+        title: "setting",
+        icon: SettingsIcon
+    },
+
+]
 export const Faqs = [
     {
         id:1,
