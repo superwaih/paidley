@@ -2,6 +2,7 @@ import BalanceCard from '@/components/dashboard/BalanceCard'
 import DashboardLayout from '@/components/dashboard/DashboardLayout'
 import GetStartedCard from '@/components/dashboard/GetStartedCard'
 import SimpleNav from '@/components/dashboard/SimpleNav'
+import TransactionsTable from '@/components/dashboard/TransactionsTable'
 import Head  from 'next/head'
 import React from 'react'
 
@@ -15,11 +16,11 @@ const DashboardPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <DashboardLayout>
-      <div className='p-5 flex flex-col space-y-8'>
+      <div className='px-9 flex flex-col space-y-8'>
         {/* Heading */}
         <SimpleNav />
         {/* Welcome message */}
-        <div className='horizontal space-y-4 pt-8'>
+        <div className='horizontal space-y-4 pt-6'>
           <h3 className='normal-text text-2xl font-bold'>Welcome John Okafor</h3>
           <p className='gray-text'>Looking forward to serving you better</p>
         </div>
@@ -30,7 +31,7 @@ const DashboardPage = () => {
           <div className='grid grid-cols-2 gap-4 lg:grid-cols-3 py-4 w-full justify-between'>
           <BalanceCard type={"naira"} />
           <BalanceCard type={"usd"} />
-          <BalanceCard type={"eur"} />
+          <BalanceCard type={"usd"} />
           </div>
         </div>
 
@@ -40,7 +41,7 @@ const DashboardPage = () => {
         </div>
         <div className='w-full '>
           <h4 className='normal-text font-semibold text-[20px]'>Activities</h4>
-         
+         <TransactionsTable />
         </div>
       </div>
 

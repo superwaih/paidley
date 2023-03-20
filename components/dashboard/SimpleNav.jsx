@@ -2,7 +2,7 @@ import React from 'react'
 
 const SimpleNav = ({page, user}) => {
   return (
-    <div className='flex justify-between'>
+    <div className='flex justify-between pt-6'>
           <h3 className='font-semibold normal-text text-xl'>Accounts</h3>
           <div className='flex items-center gap-2'>
             <div className='w-12 h-12 rounded-full bg-brand-blue'></div>

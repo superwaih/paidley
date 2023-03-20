@@ -1,9 +1,10 @@
 import React from 'react'
+import SingleTransaction from './SingleTransaction'
 
 const mocktrans = [
     {
         id: 1,
-        fullname:"Shittu Adeewale",
+        fullname:"Shittu Adewale",
         type: "transfer",
         reference: "#146286351894",
         amount: "(NGN) 45,000",
@@ -50,7 +51,23 @@ const mocktrans = [
 ]
 const TransactionsTable = () => {
   return (
-    <div>TransactionsTable</div>
+    <div className='w-full bg-[#FEFEFE] px-3 py-5 rounded-md shadow-md'>
+        <div className='grid grid-cols-6 border-b-2 py-2'>
+
+            <h3 className='text-[#4C5561] font-semibold'>Title</h3>
+            <h3 className='text-[#4C5561] font-semibold'>Type</h3>
+            <h3 className='text-[#4C5561] font-semibold'>Reference</h3>
+            <h3 className='text-[#4C5561] font-semibold'>Amount</h3>
+            <h3 className='text-[#4C5561] font-semibold'>Time</h3>
+            <h3 className='text-[#4C5561] font-semibold'>Status</h3>
+
+        </div>
+        <div>
+            {mocktrans.map((trans) =>( 
+                <SingleTransaction transaction={trans} key={trans.id} />
+            ))}
+        </div>
+        </div>
   )
 }
 

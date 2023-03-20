@@ -3,7 +3,7 @@ import Sidebar from './Sidebar'
 
 const DashboardLayout = ({children}) => {
   return (
-    <div className='flex relative  mx-auto  h-screen'>
+    <div className='flex relative bg-[#FDFDFD]  mx-auto  h-screen'>
         <div className='flex-4'>
           {/* Sidebar */}
           <Sidebar />

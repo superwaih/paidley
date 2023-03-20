@@ -16,13 +16,13 @@ const data = [
         Icon: BsArrowBarUp
     },
     {
-        id: 1,
+        id: 4,
         content: "Virtual Card",
         sub: "View Card Details",
         Icon: CardIcon
     },
     {
-        id: 1,
+        id: 5,
         content: "Add Money",
         sub:"View Acc details",
         Icon: UserIcon
@@ -46,7 +46,7 @@ const GetStartedCard = () => {
                     <p className='gray-text text-sm'>{sub}</p>
                 </div>
                 {sub && (<div className='flex justify-end items-end '>
-                    <RxCaretRight className='text-2xl'/>
+                    <RxCaretRight className='text-3xl text-[#306BB1]' />
                 </div>)}
                 
 
