@@ -1,4 +1,5 @@
 import React from 'react'
+import EmptyState from './EmptyState'
 import SingleTransaction from './SingleTransaction'
 
 const mocktrans = [
@@ -62,10 +63,13 @@ const TransactionsTable = () => {
             <h3 className='text-[#4C5561] font-semibold'>Status</h3>
 
         </div>
-        <div>
+        {/* <div>
             {mocktrans.map((trans) =>( 
                 <SingleTransaction transaction={trans} key={trans.id} />
             ))}
+        </div> */}
+        <div className='flex justify-center items-center'>
+            <EmptyState />
         </div>
         </div>
   )

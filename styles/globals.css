@@ -8,7 +8,10 @@ html,body{
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
 }
-
+.register-bg{
+    background: radial-gradient(54.86% 303.97% at 89.63% 18.57%, #8DD8F7 44.79%, #8DD8F7 53.65%);
+    filter: blur(400px);
+}
 @layer base{
     .normal-text{
         @apply text-[#283341]
