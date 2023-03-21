@@ -1,16 +1,11 @@
+import React from 'react'
 import React from "react";
 import Image from "next/image";
 import Logo from "../../public/svgs/logo.svg";
 import RegisterImage from "../../public/auth-images/register-one.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
-
-const RegisterPage = () => {
-  const router = useRouter()
-  const handleSubmit = (e) =>{
-    e.preventDefault()
-    router.push("/register/verify-email")
-  }
+const AuthLayout = ({children}) => {
   return (
     <div className="bg-gradient-to-r  h-screen md:py-4 from-[#8DD8F7]/40 to-[#8DD8F7]/10 h-full flex justify-evenly">
       <div className="w-2/5 shadow-md hidden md:flex  flex-col justify-between px-4 py-8 space-y-12 h-full ">
@@ -41,7 +36,7 @@ const RegisterPage = () => {
             <h3 className="font-bold text-xl py-4 px-6 normal-text">Create Account</h3>
           </div>
 
-          <form onSubmit={handleSubmit} className="flex py-4 w-full flex-col space-y-4">
+          {/* <form onSubmit={handleSubmit} className="flex py-4 w-full flex-col space-y-4">
            <div className="flex flex-col lg:flex-row">
            <div className="px-6  flex flex-col space-y-2">
               <label className="text-[#444A58]" htmlFor="firstname">
@@ -97,11 +92,11 @@ const RegisterPage = () => {
               </Link></span></h6>
            </div>
             
-          </form>
+          </form> */}
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RegisterPage;
+export default AuthLayout

@@ -1,16 +1,6 @@
-import React from "react";
-import Image from "next/image";
-import Logo from "../../public/svgs/logo.svg";
-import RegisterImage from "../../public/auth-images/register-one.png";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import React from 'react'
 
-const RegisterPage = () => {
-  const router = useRouter()
-  const handleSubmit = (e) =>{
-    e.preventDefault()
-    router.push("/register/verify-email")
-  }
+const KycSetup = () => {
   return (
     <div className="bg-gradient-to-r  h-screen md:py-4 from-[#8DD8F7]/40 to-[#8DD8F7]/10 h-full flex justify-evenly">
       <div className="w-2/5 shadow-md hidden md:flex  flex-col justify-between px-4 py-8 space-y-12 h-full ">
@@ -101,7 +91,7 @@ const RegisterPage = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RegisterPage;
+export default KycSetup
