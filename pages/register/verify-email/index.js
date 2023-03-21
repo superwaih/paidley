@@ -7,6 +7,12 @@ import { useRouter } from "next/router";
 
 
 const ConfirmEmail = () => {
+  const router = useRouter()
+  const handleSubmit = (e) =>{
+    e.preventDefault()
+    router.push("/register/kyc-setup")
+
+  }
   return (
     <div className="bg-gradient-to-r  h-screen md:py-4 from-[#8DD8F7]/40 to-[#8DD8F7]/10 h-full flex justify-evenly">
     <div className="w-2/5 shadow-md hidden md:flex  flex-col justify-between px-4 py-8 space-y-12 h-full ">
@@ -37,13 +43,13 @@ const ConfirmEmail = () => {
           <h3 className="font-bold text-xl py-4 px-6 normal-text">Verify your email</h3>
         </div>
 
-        <form className="flex py-4 w-full flex-col space-y-4">
+        <form onSubmit={handleSubmit} className="flex py-4 w-full flex-col space-y-4">
         <h3 className="px-6 text-lg">Please enter the OTP sent to the email address you provided</h3>
 
         
         
          <div className="px-6">
-         <button className="btn-full items-center">Verify Email</button>
+         <button type="submit" className="btn-full items-center">Verify Email</button>
          </div>
          <div className="flex items-center justify-center">
           <h6 className="gray-text font-semibold">Resend Code</h6>

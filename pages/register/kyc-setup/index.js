@@ -1,5 +1,8 @@
 import React from 'react'
-
+import Image from 'next/image'
+import RegisterImage from "../../../public/auth-images/register-one.png";
+import Logo from "../../../public/svgs/logo.svg"
+import Link from 'next/link';
 const KycSetup = () => {
   return (
     <div className="bg-gradient-to-r  h-screen md:py-4 from-[#8DD8F7]/40 to-[#8DD8F7]/10 h-full flex justify-evenly">
@@ -31,7 +34,7 @@ const KycSetup = () => {
             <h3 className="font-bold text-xl py-4 px-6 normal-text">Create Account</h3>
           </div>
 
-          <form onSubmit={handleSubmit} className="flex py-4 w-full flex-col space-y-4">
+          <form  className="flex py-4 w-full flex-col space-y-4">
            <div className="flex flex-col lg:flex-row">
            <div className="px-6  flex flex-col space-y-2">
               <label className="text-[#444A58]" htmlFor="firstname">
