@@ -22,7 +22,7 @@ const RegisterPage = () => {
           </h3>
         </div>
         <div className="flex items-center justify-center">
-          <Image width={0} height={0} src={RegisterImage} alt="" />
+          {/* <Image width={0} height={0} src={RegisterImage} alt="" /> */}
         </div>
 
         <div className="flex justify-between w-full gray-text">

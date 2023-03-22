@@ -1,5 +1,4 @@
 import React from 'react'
-import React from "react";
 import Image from "next/image";
 import Logo from "../../public/svgs/logo.svg";
 import RegisterImage from "../../public/auth-images/register-one.png";
