@@ -7,7 +7,7 @@ import {RxCaretRight} from "react-icons/rx"
 
 const BalanceCard = ({type}) => {
   return (
-    <div className='max-w-md cursor-pointer flex flex-col space-y-4 p-4 bg-[#FEFEFE] shadow-md rounded-md'>
+    <div className='max-w-md cursor-pointer duration-300 hover:scale-105 flex flex-col space-y-4 p-4 bg-[#FEFEFE] shadow-md rounded-md'>
         <div className='flex justify-between'>
             {type === "naira" && (
             <div className='flex justify-between w-full'>

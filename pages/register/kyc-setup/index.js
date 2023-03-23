@@ -5,7 +5,7 @@ import Logo from "../../../public/svgs/logo.svg"
 import Link from 'next/link';
 const KycSetup = () => {
   return (
-    <div className="bg-gradient-to-r  h-screen md:py-4 from-[#8DD8F7]/40 to-[#8DD8F7]/10 h-full flex justify-evenly">
+    <div className="bg-gradient-to-r  h-screen md:py-4 from-[#8DD8F7]/40 to-[#8DD8F7]/10 flex justify-evenly">
       <div className="w-2/5 shadow-md hidden md:flex  flex-col justify-between px-4 py-8 space-y-12 h-full ">
         <Image width={0} height={0} src={Logo} alt="" />
         <div>

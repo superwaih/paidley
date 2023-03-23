@@ -35,7 +35,7 @@ const GetStartedCard = () => {
         {data.map((card) =>{
             const{id, content, sub, Icon} = card
             return(
-                <div key={id} className="py-4 max-w-md
+                <div key={id} className="py-4 duration-300 hover:scale-105
                  cursor-pointer border-[#306BB2] 
                 border rounded-lg justify-center shadow-md bg-[#F7FAFD] max-w-sm flex items-center gap-2">
                 <div>
