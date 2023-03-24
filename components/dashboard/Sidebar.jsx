@@ -8,9 +8,8 @@ import { useRouter } from 'next/router'
 const Sidebar = () => {
     const router = useRouter()
     const routePath = router.pathname
-    console.log(routePath)
   return (
-    <div className='bg-[#074DA2] max-w-md w-[300px] py-8  h-screen rounded-r-[40px]'>
+    <div className='bg-[#074DA2] hidden md:inline-block max-w-md w-[300px] py-8  h-screen rounded-r-[40px]'>
         <div className='m-auto flex-1 w-[80%]'>
             <Image
                 width={0}
@@ -26,11 +25,11 @@ const Sidebar = () => {
             
             return(
                 <Link href={href} key={id}>
-                    <div className={routePath === href ? 'w-full bg-[#CDDBEC]' : "w-full"} >
+                    <div className={routePath.includes(href) ? 'w-full bg-[#CDDBEC]' : "w-full"} >
                 <div className='flex gap-3 py-4 m-auto w-[80%]' >
                     <Icon />
 
-                    <h3 className={routePath === href ? 'capitalize text-[#306BB1] font-bold' : 'capitalize text-[#CDDBEC]'} >{title}</h3>
+                    <h3 className={routePath.includes(href) ? 'capitalize text-[#306BB1] font-bold' : 'capitalize text-[#CDDBEC]'} >{title}</h3>
                     </div> 
                     </div>
             </Link>
