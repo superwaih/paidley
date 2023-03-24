@@ -24,7 +24,7 @@ const AccountBalanceCard = () => {
            <div>
       <div className='grid grid-cols-1  lg:grid-cols-3 gap-4'>
       <div className='horizontal space-y-2 '>
-            <h3 className='gray-text text-sm'>Account holder's name</h3>
+            <h3 className='gray-text text-sm'>Account holder&apos;s name</h3>
             <p className='font-semibold '>John Okafor</p>
         </div>
         <div className='horizontal space-y-2 '>
