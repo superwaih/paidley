@@ -18,7 +18,8 @@ module.exports = {
       },
       backgroundImage:{
         "hero": "url(/images/bg-contact.png)",
-        "herosmall": "url(/images/bg-contact-small.png)"
+        "herosmall": "url(/images/bg-contact-small.png)",
+        "balanceBg": "url(/images/balance.png)",
 
       }
     },

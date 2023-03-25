@@ -1,6 +1,7 @@
 import BalanceCard from '@/components/dashboard/BalanceCard'
 import DashboardLayout from '@/components/dashboard/DashboardLayout'
 import GetStartedCard from '@/components/dashboard/GetStartedCard'
+import MobileBalance from '@/components/dashboard/MobileBalance'
 import SimpleNav from '@/components/dashboard/SimpleNav'
 import TransactionsTable from '@/components/dashboard/TransactionsTable'
 import Head  from 'next/head'
@@ -20,6 +21,7 @@ const DashboardPage = () => {
         {/* Heading */}
         <SimpleNav title={"home"} />
         {/* Welcome message */}
+        <MobileBalance />
         <div className='hidden md:flex flex-col space-y-4 pt-6'>
           <h3 className='normal-text text-2xl font-bold'>Welcome John Okafor</h3>
           <p className='gray-text'>Looking forward to serving you better</p>
