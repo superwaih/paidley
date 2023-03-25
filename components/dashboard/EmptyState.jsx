@@ -7,7 +7,7 @@ const EmptyState = () => {
        <div className='rounded-full bg-[#EAF0F6] p-4'>
        <ArrowDouble />
        </div>
-        <p className='gray-text text-lg'>You dont have any transaction</p>
+        <p className='gray-text text-center text-lg'>You dont have any transaction</p>
     </div>
   )
 }

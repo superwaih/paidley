@@ -37,12 +37,21 @@ const DashboardPage = () => {
           </div>
         </div>
 
-        <div className='w-full '>
+        <div className='w-full hidden md:inline-block'>
           <h4 className='normal-text font-semibold text-[20px]'>Get Started</h4>
           <GetStartedCard />
         </div>
+
+        <div className='w-full  md:hidden inline-block'>
+          <h4 className='normal-text py-3 font-semibold text-[20px]'>Get Started</h4>
+          <GetStartedCard mobile />
+        </div>
         <div className='w-full '>
+          <div className='flex justify-between'>
           <h4 className='normal-text font-semibold text-[20px]'>Activities</h4>
+          <button className='md:hidden flex text-brand-blue
+          '>See all</button>
+          </div>
          <TransactionsTable />
         </div>
       </div>
