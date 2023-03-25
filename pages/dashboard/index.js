@@ -18,7 +18,7 @@ const DashboardPage = () => {
     <DashboardLayout>
       <div className='px-9 flex flex-col space-y-8'>
         {/* Heading */}
-        <SimpleNav />
+        <SimpleNav title={"home"} />
         {/* Welcome message */}
         <div className='horizontal space-y-4 pt-6'>
           <h3 className='normal-text text-2xl font-bold'>Welcome John Okafor</h3>
