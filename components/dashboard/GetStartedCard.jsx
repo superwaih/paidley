@@ -40,7 +40,7 @@ const data = [
 const GetStartedCard = () => {
     const router = useRouter()
   return (
-    <div className='grid grid-cols-2 lg:grid-cols-4 gap-3'>
+    <div className='grid  grid-cols-2 lg:grid-cols-4 gap-3'>
         {data.map((card) =>{
             const{id, content, sub, Icon,href} = card
             return(

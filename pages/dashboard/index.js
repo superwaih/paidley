@@ -20,15 +20,15 @@ const DashboardPage = () => {
         {/* Heading */}
         <SimpleNav title={"home"} />
         {/* Welcome message */}
-        <div className='horizontal space-y-4 pt-6'>
+        <div className='hidden md:flex flex-col space-y-4 pt-6'>
           <h3 className='normal-text text-2xl font-bold'>Welcome John Okafor</h3>
           <p className='gray-text'>Looking forward to serving you better</p>
         </div>
 
 
-        <div className='w-full '>
+        <div className='w-full hidden md:inline-block '>
           <h4 className='normal-text text-[20px]'>Account Balance</h4>
-          <div className='grid grid-cols-2 gap-4 lg:grid-cols-3 py-4 w-full justify-between'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 py-4 w-full justify-between'>
           <BalanceCard type={"naira"} />
           <BalanceCard type={"usd"} />
           <BalanceCard type={"usd"} />
