@@ -43,7 +43,7 @@ const DashboardPage = () => {
         </div>
 
         <div className='w-full  md:hidden inline-block'>
-          <h4 className='normal-text py-3 font-semibold text-[20px]'>Get Started</h4>
+          {/* <h4 className='normal-text py-3 font-semibold text-[20px]'>Get Started</h4> */}
           <GetStartedCard mobile />
         </div>
         <div className='w-full '>
