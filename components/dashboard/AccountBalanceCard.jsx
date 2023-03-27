@@ -3,14 +3,14 @@ import {BiCopy} from "react-icons/bi"
 const AccountBalanceCard = () => {
   return (
     <div className='px-8 horizontal'>
-        <div className='flex py-8 w-full justify-between'>
-            <div className='flex flex-col space-y-4'>
+        <div className='flex py-8 flex-col md:flex-row  w-full justify-between'>
+            <div className='flex flex-col space-y-2'>
                 <h4 className='text-lg gray-text'>Balance</h4>
                 <p className='font-bold text-2xl '>200.34</p>
             </div  >
-            <div className='flex flex-col space-y-4'>
+            <div className='flex flex-col  space-y-2'>
                 <h3 className='text-lg gray-text'>Type</h3>
-                <select className='p-4 border-brand-color border rounded-[12px]' name="" id="">
+                <select className='p-3 border-brand-color border rounded-[12px]' name="" id="">
                     <option value="naira">Nigerian Naira</option>
                     <option value="">American Dollar</option>
                     <option value="">Bristish Pound</option>

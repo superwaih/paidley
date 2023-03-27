@@ -38,7 +38,7 @@ const TransferPage = () => {
     <DashboardLayout >
         <SimpleNav title={"transfer"} />
         <div className='flex px-8 justify-center items-center  w-full'>
-          <div className='flex mt-[150px]  rounded-md border  hover:[#F3F7FA] bg-white px-6 py-4 flex-col space-y-6 rouned-md shadow-md max-w-lg'>
+          <div className='flex mt-[10px] md:mt-[130px]  rounded-md border  hover:[#F3F7FA] bg-white px-6 py-4 flex-col space-y-6 rouned-md shadow-md max-w-lg'>
             <h3 className='font-bold  text-xl'>Send Money</h3>
             <p className='gray-text '>Select Transfer Method</p>
 

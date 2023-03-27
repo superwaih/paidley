@@ -12,7 +12,7 @@ const SendMoney = () => {
     <DashboardLayout >
         <SimpleNav title={"transfer"} />
           <div className='flex px-8 justify-center items-center  w-full'>
-          <div className='flex mt-[20px] md:mt-[110px] max-w-lg rounded-md border  hover:[#F3F7FA] bg-white  px-6 py-4 flex-col space-y-6 rouned-md shadow-md '>
+          <div className='flex mt-[10px] md:mt-[110px] max-w-lg rounded-md border  hover:[#F3F7FA] bg-white  px-6 py-4 flex-col space-y-6 rouned-md shadow-md '>
             <h3 className='font-bold  text-xl'>Send Money</h3>
             <p className='gray-text '>Fill details below to send money to beneficiary.</p>
 

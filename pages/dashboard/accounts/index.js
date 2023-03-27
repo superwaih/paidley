@@ -50,7 +50,7 @@ const AccountsPage = () => {
       title={"accounts"}
       />
      <div className='flex px-8 justify-center items-center  w-full'>
-          <div className='flex mt-[150px]  rounded-md border  hover:[#F3F7FA] bg-white px-9 py-4 flex-col space-y-6 rouned-md shadow-md max-w-lg'>
+          <div className='flex mt-[60px] md:mt-[150px]  rounded-md border  hover:[#F3F7FA] bg-white px-9 py-4 flex-col space-y-6 rouned-md shadow-md max-w-lg'>
             <h3 className='gray-text  text-lg'>Choose the account below to view details.</h3>
 
 
@@ -59,7 +59,7 @@ const AccountsPage = () => {
               return(
                 <div 
                 onClick={() =>handleChooseAccount(account, title) }
-                className={transferType === title ? 'flex  px-4 border-[#306BB1] border rounded-[12px] duration-300 shadow-md py-4 cursor-pointer items-center bg-[#F3F7FA] gap-4' : 'flex  px-4 duration-300 border rounded-[12px]  shadow-md py-4 cursor-pointer items-center gap-4'} 
+                className={transferType === title ? 'flex flex-col  px-4 border-[#306BB1] border rounded-[12px] duration-300 shadow-md py-4 cursor-pointer items-center bg-[#F3F7FA] gap-4' : 'flex flex-col px-4 duration-300 border rounded-[12px]  shadow-md py-4 cursor-pointer items-center gap-4'} 
                 
                 
                 key={id}

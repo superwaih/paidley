@@ -1,13 +1,16 @@
 import BalanceCard from '@/components/dashboard/BalanceCard'
 import DashboardLayout from '@/components/dashboard/DashboardLayout'
 import GetStartedCard from '@/components/dashboard/GetStartedCard'
-import MobileBalance from '@/components/dashboard/MobileBalance'
+import MobileBalance from '@/components/dashboard/mobile-componets/MobileBalance'
+import MobileSidebar from '@/components/dashboard/mobile-componets/MobileSidebar'
 import SimpleNav from '@/components/dashboard/SimpleNav'
 import TransactionsTable from '@/components/dashboard/TransactionsTable'
+import { useDashboardProvider } from '@/context/DashboardProvider'
 import Head  from 'next/head'
-import React from 'react'
+import React, { useState } from 'react'
 
 const DashboardPage = () => {
+  const{showMenu} = useDashboardProvider()
   return (
     <>
      <Head>
@@ -17,18 +20,23 @@ const DashboardPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <DashboardLayout>
-      <div className='px-9 flex flex-col space-y-8'>
+      <div className='flex flex-col space-y-8'>
+      
         {/* Heading */}
-        <SimpleNav title={"home"} />
+       <div className=''>
+       <SimpleNav title={"home"}  />
+       </div>
         {/* Welcome message */}
+        <div className='px-4'>
         <MobileBalance />
-        <div className='hidden md:flex flex-col space-y-4 pt-6'>
+        </div>
+        <div className='hidden px-9 md:flex flex-col space-y-4 pt-6'>
           <h3 className='normal-text text-2xl font-bold'>Welcome John Okafor</h3>
           <p className='gray-text'>Looking forward to serving you better</p>
         </div>
 
 
-        <div className='w-full hidden md:inline-block '>
+        <div className='w-[80%] px-9 hidden md:inline-block '>
           <h4 className='normal-text text-[20px]'>Account Balance</h4>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 py-4 w-full justify-between'>
           <BalanceCard type={"naira"} />
@@ -37,16 +45,16 @@ const DashboardPage = () => {
           </div>
         </div>
 
-        <div className='w-full hidden md:inline-block'>
+        <div className='w-[80%] px-6 hidden md:inline-block'>
           <h4 className='normal-text font-semibold text-[20px]'>Get Started</h4>
           <GetStartedCard />
         </div>
 
-        <div className='w-full  md:hidden inline-block'>
+        <div className='w-full px-6  md:hidden inline-block'>
           {/* <h4 className='normal-text py-3 font-semibold text-[20px]'>Get Started</h4> */}
           <GetStartedCard mobile />
         </div>
-        <div className='w-full '>
+        <div className='w-full px-6 md:px-9'>
           <div className='flex justify-between'>
           <h4 className='normal-text font-semibold text-[20px]'>Activities</h4>
           <button className='md:hidden flex text-brand-blue
@@ -54,6 +62,7 @@ const DashboardPage = () => {
           </div>
          <TransactionsTable />
         </div>
+        
       </div>
 
 

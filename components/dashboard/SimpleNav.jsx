@@ -1,21 +1,22 @@
-import { MenuIcon } from '@/public/svgs/MenuIcon'
-import React, { useState } from 'react'
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import { useDashboardProvider } from "@/context/DashboardProvider";
+import { MenuIcon } from "@/public/svgs/MenuIcon";
+import React, { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import MobileSidebar from "./mobile-componets/MobileSidebar";
 
-const SimpleNav = ({title, user}) => {
-   const [showMenu, setShowMenu] = useState(false)
+const SimpleNav = ({ title, user }) => {
+  const { showMenu, setShowMenu } = useDashboardProvider();
+  //  const [showMenu, setShowMenu] = useState(false)
   return (
-    <div className='flex  justify-between md:flex-row  items-center pt-4  md:px-6'>
-          <h3 className='font-semibold hidden md:inline-block capitalize normal-text text-xl'>{title}</h3>
-          <div className='flex items-center gap-1 md:gap-2'>
-            <div className='md:w-12 w-8 h-8 md:h-12 rounded-full bg-brand-blue'></div>
-            <p className='font-semibold' >John Okafor</p>
-          </div>
-          <div onClick={() => setShowMenu(!showMenu)} className='md:hidden flex'>
-         {showMenu ? <AiOutlineClose className='text-brand-color text-2xl' /> :  <AiOutlineMenu className='text-brand-color text-2xl' />}
-          </div>
-        </div>
-  )
-}
+    <div className="relative">
+      <div className="md:px-9 px-6">
 
-export default SimpleNav
+     
+      </div>
+
+    {showMenu && <MobileSidebar />}
+    </div>
+  );
+};
+
+export default SimpleNav;
