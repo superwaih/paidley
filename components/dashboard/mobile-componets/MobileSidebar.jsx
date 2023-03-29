@@ -15,9 +15,9 @@ const MobileSidebar = () => {
     <motion.div 
     initial='hidden'
     whileInView={'show'}
-     variants={fadeIn("right")} 
+    variants={fadeIn("right")} 
 
-    className='bg-white bottom-0 shadow-md py-8 left-0 top-0  md:hidden max-w-2xl    h-screen absolute'>
+    className='bg-white bottom-0 shadow-md py-8 left-0 top-0  md:hidden max-w-3xl    h-screen absolute'>
     <div className='m-auto flex-1 w-[80%]'>
         <Image
             width={0}

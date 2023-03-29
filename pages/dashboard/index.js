@@ -20,7 +20,7 @@ const DashboardPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     <DashboardLayout>
-      <div className='flex flex-col space-y-8'>
+      <div className='flex flex-col space-y-5'>
       
         {/* Heading */}
        <div className=''>
@@ -30,13 +30,13 @@ const DashboardPage = () => {
         <div className='px-4'>
         <MobileBalance />
         </div>
-        <div className='hidden px-9 md:flex flex-col space-y-4 pt-6'>
+        <div className='hidden px-9 md:flex flex-col space-y-4 pt-2'>
           <h3 className='normal-text text-2xl font-bold'>Welcome John Okafor</h3>
           <p className='gray-text'>Looking forward to serving you better</p>
         </div>
 
 
-        <div className='w-[80%] px-9 hidden md:inline-block '>
+        <div className='px-9 hidden md:inline-block '>
           <h4 className='normal-text text-[20px]'>Account Balance</h4>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-3 py-4 w-full justify-between'>
           <BalanceCard type={"naira"} />
@@ -45,7 +45,7 @@ const DashboardPage = () => {
           </div>
         </div>
 
-        <div className='w-[80%] px-6 hidden md:inline-block'>
+        <div className=' px-6 hidden md:inline-block'>
           <h4 className='normal-text font-semibold text-[20px]'>Get Started</h4>
           <GetStartedCard />
         </div>
