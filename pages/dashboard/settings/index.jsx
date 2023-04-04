@@ -1,11 +1,13 @@
 import DashboardLayout from '@/components/dashboard/DashboardLayout'
+import SimpleNav from '@/components/dashboard/SimpleNav'
 import React from 'react'
 
 const SettingsPage = () => {
   return (
     <DashboardLayout>
-
-        <div>SettingsPage</div>
+      <SimpleNav 
+      title={"Settings"}
+      />
     </DashboardLayout>
   )
 }
