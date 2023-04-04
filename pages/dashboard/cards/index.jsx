@@ -12,14 +12,14 @@ const CardsPage = () => {
     <DashboardLayout>
           <SimpleNav title={"virtual cards"} />
 
-          <div className='px-8 '>
+          <div className='px-5 md:px-8 '>
           <button className=' rounded-[12px] border text-brand-color hover:bg-brand-color hover:text-white duration-300 border-brand-color px-4 py-2'>Back</button>
           </div>
 
           <div className='flex px-8 justify-center items-center  w-full'>
           <div className='flex mt-[10px] md:mt-[90px]  rounded-md border  hover:[#F3F7FA] bg-white px-6 py-4 flex-col space-y-6 rouned-md shadow-md max-w-lg'>
            <div className=' justify-between w-full'>
-           <div className='px-16 duration-300 gap-4 flex'>
+           <div className=' md:px-16 duration-300 gap-4 flex'>
            <button onClick={() => setCardType("physical")}  className={cardType === "physical" ? 'border-brand-color border-b-2' : 'gray-text'}>Physical Card</button>
             <button onClick={() => setCardType("virtual")} className={cardType === "virtual" ? 'border-brand-color border-b-2' : 'gray-text'}>Virtual Card</button>
            </div>

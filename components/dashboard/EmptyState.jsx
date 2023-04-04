@@ -1,13 +1,13 @@
 import { ArrowDouble } from '@/public/svgs/Arrow-double'
 import React from 'react'
 
-const EmptyState = () => {
+const EmptyState = ({text, Icon}) => {
   return (
     <div className=' flex flex-col justify-center items-center cursor-pointer py-12'>
        <div className='rounded-full bg-[#EAF0F6] p-4'>
-       <ArrowDouble />
+       <Icon />
        </div>
-        <p className='gray-text text-center text-lg'>You dont have any transaction</p>
+        <p className='gray-text text-center text-lg'>{text}</p>
     </div>
   )
 }

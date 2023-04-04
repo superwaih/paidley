@@ -32,7 +32,7 @@ const SimpleNav = ({ title, user }) => {
           </h3>
 
           <div onClick={() => setShowMenu(!showMenu)} className="flex md:hidden duration-300 ">
-            {showMenu ?<AiOutlineClose className="text-2xl text-brand-color" />  :  <AiOutlineMenu className="text-2xl text-brand-color" />}
+            {showMenu ?<AiOutlineClose className="text-2xl text-red-400" />  :  <AiOutlineMenu className="text-3xl text-brand-color" />}
           </div>
           <div className="flex  items-center gap-1 md:gap-2">
             {/* <div className="md:w-12 w-8 h-8 md:h-12 rounded-full bg-brand-blue"></div> */}

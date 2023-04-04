@@ -1,7 +1,7 @@
 import React from 'react'
 import EmptyState from './EmptyState'
 import SingleTransaction from './SingleTransaction'
-
+import { ArrowDouble } from '@/public/svgs/Arrow-double'
 const mocktrans = [
     {
         id: 1,
@@ -96,7 +96,7 @@ const TransactionsTable = () => {
             ))}
         </div>
         {/* <div className='flex justify-center items-center'>
-            <EmptyState />
+            <EmptyState text={"You dont have any transaction"} Icon={ArrowDouble} />
         </div> */}
         </div>
   )

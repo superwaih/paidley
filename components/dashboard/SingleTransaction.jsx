@@ -28,9 +28,9 @@ const SingleTransaction = ({transaction}) => {
 
       <ul className='flex md:hidden gap-1 justify-between'>
         <li className='flex gap-1 pb-4'>
-        <div className='p-3 h-12 w-12 bg-red-400 rounded-full'>SA</div>
+        <div className='p-3 h-12 w-12 bg-red-400 text-white rounded-full'>SA</div>
         <div>
-          <h3 className='font-semibold'>Shey Ade</h3>
+          <h3 className='font-semibold text'>Shey Ade</h3>
           <p className='gray-text text-[12px]'>2 Sept 2023</p>
         </div>
         </li>
