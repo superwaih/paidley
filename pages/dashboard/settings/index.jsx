@@ -8,6 +8,9 @@ const SettingsPage = () => {
       <SimpleNav 
       title={"Settings"}
       />
+      <div className='px-5 md:px-8 '>
+        
+      </div>
     </DashboardLayout>
   )
 }
