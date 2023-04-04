@@ -12,7 +12,7 @@ const AddBeneficiary = () => {
       <div className="px-5 md:px-8 grid grid-cols-1 gap-4 md:gap-8 my-8 md:mt-12 md:grid-cols-2 ">
         <div className="px-6  flex flex-col space-y-2">
           <label className="text-[#444A58]" htmlFor="firstname">
-            Receipient's Currency
+            Receipient&apos;s Currency
           </label>
           <select type="text" className="input-gray">
             <option value="">EUR</option>
