@@ -22,7 +22,7 @@ const Profile = () => {
                 />
             </div>
 
-            <div>
+            <div className='grid grid-cols-1 gap-4 py-4 md:grid-cols-2'>
                 
             <div>
                 <h3 className='text-[#283341] font-semibold'>full name</h3>
@@ -55,33 +55,29 @@ const Profile = () => {
 
             </div>
             <div>
-                <h3 className='text-[#283341] font-semibold'>full name</h3>
-                <p className='text-[#9399A0]'>Legal Full name</p>
+                <h3 className='text-[#283341] font-semibold'>Others</h3>
                 <div className=" flex flex-col space-y-2">
               <label className="text-[#444A58]" htmlFor="firstname">
-                First Name
+                Email Address
               </label>
               <input type="text" className="input-gray" />
             </div>
 
             <div className=" flex flex-col space-y-2">
               <label className="text-[#444A58]" htmlFor="firstname">
-                last Name
+                Phone Number
               </label>
               <input type="text" className="input-gray" />
             </div>
             <div className=" flex flex-col space-y-2">
               <label className="text-[#444A58]" htmlFor="firstname">
-                last Name
+                Referrals
               </label>
-              <input type="text" className="input-gray" />
+              <textarea type="text" className="input-gray" />
             </div>
 
-            <div>
-
-            </div>
-            <h3>Paidley Tag</h3>
-            <p>Send and receive money from anyone on paidley.</p>
+           
+           
 
             </div>
             </div>
