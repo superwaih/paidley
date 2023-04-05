@@ -17,7 +17,7 @@ const MobileSidebar = () => {
     whileInView={'show'}
     variants={fadeIn("right")} 
 
-    className='bg-white bottom-0 shadow-md py-8 left-0 top-0  md:hidden max-w-3xl  w-[280px]   h-screen absolute'>
+    className='bg-white bottom-0 shadow-md py-8 left-0 top-0  md:hidden max-w-3xl  w-[30px]   h-screen absolute'>
     <div className='m-auto flex-1 w-[80%]'>
         <Image
             width={0}
