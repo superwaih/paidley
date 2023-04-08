@@ -25,11 +25,11 @@ const Sidebar = () => {
             
             return(
                 <Link href={href} key={id}>
-                    <div className={routePath.includes(href) ? 'w-full bg-[#CDDBEC]' : "w-full"} >
+                    <div className={routePath === href ? 'w-full bg-[#CDDBEC]' : "w-full"} >
                 <div className='flex gap-3 py-4 m-auto w-[80%]' >
                     <Icon />
 
-                    <h3 className={routePath.includes(href) ? 'capitalize text-[#306BB1] font-bold' : 'capitalize text-[#CDDBEC]'} >{title}</h3>
+                    <h3 className={routePath === href ? 'capitalize text-[#306BB1] font-bold' : 'capitalize text-[#CDDBEC]'} >{title}</h3>
                     </div> 
                     </div>
             </Link>

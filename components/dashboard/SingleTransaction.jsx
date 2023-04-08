@@ -26,7 +26,7 @@ const SingleTransaction = ({transaction}) => {
         </li>
       </ul>
 
-      <ul className='flex md:hidden gap-1 justify-between'>
+      <ul className='flex md:hidden gap-2 justify-between'>
         <li className='flex gap-1 pb-4'>
         <div className='p-3 h-12 w-12 bg-red-400 text-white rounded-full'>SA</div>
         <div>
@@ -34,7 +34,7 @@ const SingleTransaction = ({transaction}) => {
           <p className='gray-text text-[12px]'>2 Sept 2023</p>
         </div>
         </li>
-        <li className='flex gap-1 '>
+        <li className='flex gap-2 '>
           <h3 className='font-bold '>NGN</h3>
           <div className='horizontal  items-end'>
             <h4>-400.00</h4>
