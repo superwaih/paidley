@@ -17,7 +17,7 @@ const MobileSidebar = () => {
     whileInView={'show'}
     variants={fadeIn("right")} 
 
-    className='bg-white bottom-0 shadow-md py-8 left-0 top-0  md:hidden max-w-3xl  w-[30px]   h-screen absolute'>
+    className='bg-white  bottom-0 shadow-md py-8 left-0 top-0  md:hidden max-w-3xl  w-[300px]   h-screen absolute'>
     <div className='m-auto flex-1 w-[80%]'>
         <Image
             width={0}
@@ -33,11 +33,11 @@ const MobileSidebar = () => {
         
         return(
             <Link href={href} key={id}>
-                <div className={routePath.includes(href) ? 'w-full bg-[#E8F7FD]' : "w-full"} >
+                <div className={routePath === href ? 'w-full bg-[#E8F7FD]' : "w-full"} >
             <div className='flex gap-3 py-4 m-auto w-[80%]' >
                 <Icon />
 
-                <h3 className={routePath.includes(href) ? 'capitalize text-[#306BB1] font-bold' : 'capitalize text-black'} >{title}</h3>
+                <h3 className={routePath === href ? 'capitalize text-[#306BB1] font-bold' : 'capitalize text-black'} >{title}</h3>
                 </div> 
                 </div>
         </Link>

@@ -99,7 +99,8 @@ const SimpleNav = ({ title, user }) => {
         </div>
       </div>
 
-      {showMenu && <MobileSidebar />}
+      {showMenu && (<MobileSidebar />)}
+      {/* <MobileSidebar /> */}
     </div>
   );
 };
