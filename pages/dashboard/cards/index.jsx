@@ -58,8 +58,8 @@ const CardsPage = () => {
           </div>
           {/* <PhysicalCard /> */}
           {cardType === "physical" && (
-            <div className="flex items-center justify-center">
-              <Image width={0} height={0} src={CardSample} alt="" />
+            <div className="flex  items-center justify-center">
+              <Image width={0} className="" height={0} src={CardSample} alt="" />
             </div>
           )}
           {cardType === "virtual" && (
